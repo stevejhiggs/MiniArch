@@ -10,11 +10,11 @@
 @foreach(var list in Model.Items)
 {
 	<li>@list.Name</li>
-	if (list.Items.Count > 0)
+	if (list.TodoListItems.Any())
 	{
 		<li>
 			<ul>
-				@foreach(var subitem in list.Items)
+				@foreach (var subitem in list.TodoListItems)
 				{
 					<li>@subitem.Name</li>
 					<li>@subitem.Content</li>

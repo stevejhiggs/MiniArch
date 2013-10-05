@@ -1,6 +1,8 @@
-﻿using MiniArch.ServiceLayer;
+﻿using AutoMapper;
+using MiniArch.ServiceLayer;
 using MiniArch.ServiceLayer.Models;
 using MiniArch.ViewModels;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace MiniArch.Controllers
@@ -25,23 +27,10 @@ namespace MiniArch.Controllers
 		public ActionResult Index()
 		{
 			var model = new HomeIndexListCollectionViewModel();
-
-			var listItems = ListService.GetAllListsWithItems();
+			model.Items = Mapper.Map<IEnumerable<HomeIndexListCollectionViewModel.ToDoList>>(ListService.GetAllListsWithItems());
 		
-			foreach(var list in listItems)
-			{
-				var listModel = new HomeIndexListViewModel() { Name = list.Name };
-				foreach (var subItem in list.TodoListItems)
-				{
-					listModel.Items.Add(new HomeIndexListItemViewModel() 
-										{
-											Name = subItem.Name,
-											Content = subItem.Content
-										});
-				}
+	
 
-				model.Items.Add(listModel);
-			}
 			
 			return View(model);
 		}

@@ -5,29 +5,19 @@ namespace MiniArch.ViewModels
 {
 	public class HomeIndexListCollectionViewModel
 	{
-		public List<HomeIndexListViewModel> Items { get;  private set; }
+		public IEnumerable<ToDoList> Items { get; internal set; }
 
-		public HomeIndexListCollectionViewModel()
+		public class ToDoList
 		{
-			Items = new List<HomeIndexListViewModel>();
+			public string Name { get; set; }
+			public IEnumerable<ToDoListItem> TodoListItems { get; internal set; }
 		}
-	}
 
-	public class HomeIndexListViewModel
-	{
-		public string Name { get; set; }
-		public List<HomeIndexListItemViewModel> Items { get; private set; }
-
-		public HomeIndexListViewModel()
+		public class ToDoListItem
 		{
-			Items = new List<HomeIndexListItemViewModel>();
+			public string Name { get; internal set; }
+			public string Content { get; internal set; }
+
 		}
-	}
-
-	public class HomeIndexListItemViewModel 
-	{
-		public string Name { get; set; }
-		public string Content { get; set; }
-
 	}
 }

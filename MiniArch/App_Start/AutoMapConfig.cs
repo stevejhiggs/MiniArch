@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MiniArch.ServiceLayer.Models;
+using MiniArch.ViewModels;
 
 namespace MiniArch
 {
@@ -7,6 +8,9 @@ namespace MiniArch
 	{
 		internal static void RegisterMappings()
 		{
+			Mapper.CreateMap<TodoListItemModel, HomeIndexListCollectionViewModel.ToDoListItem>();
+			Mapper.CreateMap<TodoListModel, HomeIndexListCollectionViewModel.ToDoList>();
+
 			Mapper.AssertConfigurationIsValid();
 		}
 	}
