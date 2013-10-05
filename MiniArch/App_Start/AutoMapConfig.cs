@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MiniArch.ServiceLayer.Models;
 
 namespace MiniArch
 {

@@ -8,11 +8,11 @@ namespace MiniArch.ServiceLayer.Models
 		public int? Id { get; internal set; }
 		public string Name { get; set; }
 
-		public IList<TodoListItemModel> Items { get; internal set; }
+		public IList<TodoListItemModel> TodoListItems { get; internal set; }
 
 		public TodoListModel()
 		{
-			Items = new List<TodoListItemModel>();
+			TodoListItems = new List<TodoListItemModel>();
 		}
 	}
 }

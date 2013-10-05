@@ -31,7 +31,7 @@ namespace MiniArch.Controllers
 			foreach(var list in listItems)
 			{
 				var listModel = new HomeIndexListViewModel() { Name = list.Name };
-				foreach (var subItem in list.Items)
+				foreach (var subItem in list.TodoListItems)
 				{
 					listModel.Items.Add(new HomeIndexListItemViewModel() 
 										{
@@ -50,7 +50,7 @@ namespace MiniArch.Controllers
 		{
 			var todoListModel = new TodoListModel();
 			todoListModel.Name = "shopping list";
-			todoListModel.Items.Add(new TodoListItemModel() 
+			todoListModel.TodoListItems.Add(new TodoListItemModel() 
 									{
 										Name = "chips",
 										Content = "mmm chips"
