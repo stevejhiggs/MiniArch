@@ -9,8 +9,7 @@
 
 namespace MiniArch.Persistance
 {
-    using System;
-    using System.Collections.Generic;
+	using System.Collections.Generic;
     
     public partial class TodoList
     {

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 namespace MiniArch.ServiceLayer.Models
 {
 	public class TodoListItemModel
