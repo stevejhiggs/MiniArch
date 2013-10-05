@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[TodoListItems]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[ListId] INT NOT NULL, 
+	[Name] NVARCHAR(100) NOT NULL, 
+	[Content] TEXT NOT NULL, 
+	CONSTRAINT [FK_ListItems_ToLists] FOREIGN KEY (ListId) REFERENCES [TodoLists](Id)
+)

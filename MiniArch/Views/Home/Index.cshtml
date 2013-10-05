@@ -1,0 +1,26 @@
+﻿@model MiniArch.ViewModels.HomeIndexListCollectionViewModel
+
+@{
+	ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+@foreach(var list in Model.Items)
+{
+	<li>@list.Name</li>
+	if (list.Items.Count > 0)
+	{
+		<li>
+			<ul>
+				@foreach(var subitem in list.Items)
+				{
+					<li>@subitem.Name</li>
+					<li>@subitem.Content</li>
+				}
+			</ul>
+		</li>
+	}
+}
+</ul>

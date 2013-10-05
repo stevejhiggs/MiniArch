@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="73e9c3a1-9037-423b-8a2a-0a1f82b70194" ChangeDateTime="10/05/2013 08:59:02">
+    <Property Name="ElementName" Value="[dbo].[ListItems]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[TodoListItems]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="100aa80f-4360-44df-9fbd-1f9ef4f06810" ChangeDateTime="10/05/2013 08:59:18">
+    <Property Name="ElementName" Value="[dbo].[Lists]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[TodoLists]" />
+  </Operation>
+</Operations>
