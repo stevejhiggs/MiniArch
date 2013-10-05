@@ -5,9 +5,9 @@ using System.Web.Http;
 
 namespace MiniArch
 {
-	public static class WebApiConfig
+	internal static class WebApiConfig
 	{
-		public static void Register(HttpConfiguration config)
+		internal static void Register(HttpConfiguration config)
 		{
 			config.Routes.MapHttpRoute(
 				name: "DefaultApi",

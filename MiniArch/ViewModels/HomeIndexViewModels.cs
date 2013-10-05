@@ -9,7 +9,7 @@ namespace MiniArch.ViewModels
 
 		public class ToDoList
 		{
-			public string Name { get; set; }
+			public string Name { get; internal set; }
 			public IEnumerable<ToDoListItem> TodoListItems { get; internal set; }
 		}
 

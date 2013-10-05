@@ -7,9 +7,9 @@ using System.Web.Routing;
 
 namespace MiniArch
 {
-	public class RouteConfig
+	internal class RouteConfig
 	{
-		public static void RegisterRoutes(RouteCollection routes)
+		internal static void RegisterRoutes(RouteCollection routes)
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 

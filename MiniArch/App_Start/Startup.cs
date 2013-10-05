@@ -5,9 +5,9 @@ using System.Web.Routing;
 
 namespace MiniArch
 {
-	public class Startup
+	internal class Startup
 	{
-		public static void RegisterStartupDependancies()
+		internal static void RegisterStartupDependancies()
 		{
 			MiniArch.ServiceLayer.Startup.RegisterStartupDependancies();
 

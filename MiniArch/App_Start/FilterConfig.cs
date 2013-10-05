@@ -3,9 +3,9 @@ using System.Web.Mvc;
 
 namespace MiniArch
 {
-	public class FilterConfig
+	internal class FilterConfig
 	{
-		public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+		internal static void RegisterGlobalFilters(GlobalFilterCollection filters)
 		{
 			filters.Add(new HandleErrorAttribute());
 		}
