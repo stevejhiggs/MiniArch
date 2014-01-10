@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MiniArchDatabaseContextCustom.cs" />
     <Compile Include="DbContextHelper.cs" />
     <Compile Include="MiniArchDatabaseContext.Context.cs">
       <AutoGen>True</AutoGen>
